@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7346AB72B40A50D006B1EA7 /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = F7346AB62B40A50D006B1EA7 /* Shader.metal */; };
 		F7F5BC412B40A4C100899AA2 /* MeshTransformAnimationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5BC402B40A4C100899AA2 /* MeshTransformAnimationApp.swift */; };
 		F7F5BC432B40A4C100899AA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5BC422B40A4C100899AA2 /* ContentView.swift */; };
 		F7F5BC452B40A4C200899AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F5BC442B40A4C200899AA2 /* Assets.xcassets */; };
 		F7F5BC482B40A4C200899AA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F5BC472B40A4C200899AA2 /* Preview Assets.xcassets */; };
+		F7F5BC502B40A4D800899AA2 /* Wave in Frameworks */ = {isa = PBXBuildFile; productRef = F7F5BC4F2B40A4D800899AA2 /* Wave */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7346AB62B40A50D006B1EA7 /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		F7346AB82B40A541006B1EA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F7F5BC3D2B40A4C100899AA2 /* MeshTransformAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeshTransformAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F5BC402B40A4C100899AA2 /* MeshTransformAnimationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshTransformAnimationApp.swift; sourceTree = "<group>"; };
 		F7F5BC422B40A4C100899AA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F5BC502B40A4D800899AA2 /* Wave in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +56,10 @@
 		F7F5BC3F2B40A4C100899AA2 /* MeshTransformAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				F7346AB82B40A541006B1EA7 /* Info.plist */,
 				F7F5BC402B40A4C100899AA2 /* MeshTransformAnimationApp.swift */,
 				F7F5BC422B40A4C100899AA2 /* ContentView.swift */,
+				F7346AB62B40A50D006B1EA7 /* Shader.metal */,
 				F7F5BC442B40A4C200899AA2 /* Assets.xcassets */,
 				F7F5BC462B40A4C200899AA2 /* Preview Content */,
 			);
@@ -83,6 +90,9 @@
 			dependencies = (
 			);
 			name = MeshTransformAnimation;
+			packageProductDependencies = (
+				F7F5BC4F2B40A4D800899AA2 /* Wave */,
+			);
 			productName = MeshTransformAnimation;
 			productReference = F7F5BC3D2B40A4C100899AA2 /* MeshTransformAnimation.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +121,9 @@
 				Base,
 			);
 			mainGroup = F7F5BC342B40A4C100899AA2;
+			packageReferences = (
+				F7F5BC4E2B40A4D800899AA2 /* XCRemoteSwiftPackageReference "Wave" */,
+			);
 			productRefGroup = F7F5BC3E2B40A4C100899AA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7346AB72B40A50D006B1EA7 /* Shader.metal in Sources */,
 				F7F5BC432B40A4C100899AA2 /* ContentView.swift in Sources */,
 				F7F5BC412B40A4C100899AA2 /* MeshTransformAnimationApp.swift in Sources */,
 			);
@@ -275,11 +289,13 @@
 				DEVELOPMENT_TEAM = GP8VNBM7WP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeshTransformAnimation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +320,13 @@
 				DEVELOPMENT_TEAM = GP8VNBM7WP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeshTransformAnimation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7F5BC4E2B40A4D800899AA2 /* XCRemoteSwiftPackageReference "Wave" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jtrivedi/Wave";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7F5BC4F2B40A4D800899AA2 /* Wave */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7F5BC4E2B40A4D800899AA2 /* XCRemoteSwiftPackageReference "Wave" */;
+			productName = Wave;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F7F5BC352B40A4C100899AA2 /* Project object */;
 }
